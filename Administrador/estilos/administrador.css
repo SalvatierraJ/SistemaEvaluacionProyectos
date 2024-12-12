@@ -1,0 +1,33 @@
+.containermenu{
+    color: white;
+    margin: 0;
+    height: 70px;
+    background: red;
+}
+
+.tablaListaEquipos{
+    height: 600px;
+    width: 1000px;
+}
+.botonregistrar{
+    background-color: red;
+    width: 130px;
+    margin: 18px;
+}
+
+.containertablaboton{
+    margin-top: 100px;
+    justify-content: center;
+    display: grid;
+}
+
+    /* CSS personalizado para aumentar el tamaño del checkbox */
+#juradocheck {
+width: 1.5em;
+height: 1.5em;
+}
+/* CSS personalizado para cambiar el color del checkbox */
+#juradocheck:checked {
+background-color: #007bff;
+border-color: #007bff;
+}
