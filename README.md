@@ -33,36 +33,19 @@ cd sistema-evaluacion
 ```
 
 ### 3️⃣ Configurar el Entorno
-Renombrar el archivo `.env.example` a `.env` y configurar la base de datos:
-```bash
-cp .env.example .env
+Debes dirijirte a la carpeta Administrador, luego en la carpeta config se encuentra la base de datos, los procedimientos almacenados y las vistas necesarias, debes de montar la base de datos con estos archivos .sql
+Modificar los valores en `Adminitrador/php/conexionBasededatos.php` con las credenciales de MySQL:
 ```
-Modificar los valores en `.env` con las credenciales de MySQL:
-```
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=evaluacionproyectos
-DB_USERNAME=root
-DB_PASSWORD=
+$Servidor = "localhost";
+$usuario = "root";
+$claveSecretaServidor = "";
+$nombreBaseDatos = "evaluacionproyectos";
 ```
 
-### 4️⃣ Instalar Dependencias
-```bash
-composer install
-npm install && npm run dev
-```
+### 4️⃣ Iniciar el Servidor
+esto en engix o apache dentro de la carpeta www o htdocs
 
-### 5️⃣ Ejecutar Migraciones y Seeders
-```bash
-php artisan migrate --seed
-```
-
-### 6️⃣ Iniciar el Servidor
-```bash
-php artisan serve
-```
-Acceder en el navegador: `http://127.0.0.1:8000`
+Acceder en el navegador: `http://127.0.0.1/nombreProyecto`
 
 ## Capturas de Pantalla
 ### 🔹 Vista del Administrador
